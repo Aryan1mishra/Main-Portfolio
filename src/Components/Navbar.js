@@ -1,16 +1,32 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 function Navbar() {
+  const navItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'Skills', href: '#skills' },
+    { label: 'Experience', href: '#experience' },
+    { label: 'Project', href: '#project' },
+  ];
+
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50 p-4 flex justify-center space-x-2 border-b border-slate-200">
-      <a href="#home" className="text-sky-600 font-medium hover:underline p-2">Home</a>
-      <a href="#skills" className="text-sky-600 font-medium hover:underline p-2">Skills</a>
-      <a href="#experience" className="text-sky-600 font-medium hover:underline p-2">Experience</a>
-      <a href="#project" className="text-sky-600 font-medium hover:underline p-2">Project</a>
-      <a href="#achievements" className="text-sky-600 font-medium hover:underline p-2">Achievements</a>
-      
-    </nav>
-  )
+    <motion.nav
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50 px-4 py-3 flex flex-wrap justify-center gap-2 border-b border-slate-200"
+    >
+      {navItems.map((item) => (
+        <a
+          key={item.label}
+          href={item.href}
+          className="text-sky-600 font-medium hover:underline px-3 py-2 text-sm sm:text-base"
+        >
+          {item.label}
+        </a>
+      ))}
+    </motion.nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

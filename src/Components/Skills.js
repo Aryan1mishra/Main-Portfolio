@@ -1,31 +1,66 @@
 import React from 'react'
-import { motion } from "framer-motion";
-function Skills() {
+import { motion } from 'framer-motion';
 
-  const skills = ["Tailwind css","Python","Kotlin","Oops","DBMS","Computer Network","React.js","Node.js","Express.js","MongoDB","JavaScript","HTML/CSS","Tailwind CSS","Git/GitHub"];
+// Variants for container and items
+const containerVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
+
+export default function Skills() {
+  const skills = [
+    'JavaScript',
+    'React.js',
+    'Node.js',
+    'Express.js',
+    'MongoDB',
+    'HTML/CSS',
+    'Tailwind CSS',
+    'Git/GitHub',
+    'Python',
+    'Kotlin',
+    'OOPs',
+    'DBMS',
+    'Computer Networks',
+  ];
+
   return (
     <motion.section
       id="skills"
-      className="scroll-mt-20 p-6 sm:p-10 bg-white"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
+      className="scroll-mt-20 px-6 py-8 sm:px-10 bg-white"
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
     >
-      <h2 className="text-2xl sm:text-3xl font-semibold mb-6 border-b pb-2 text-slate-800">Skills</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-        {skills.map(skill => (
+      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-center text-slate-800 border-b-2 pb-4 border-sky-300">
+        Skills
+      </h2>
+      <motion.div
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
+        variants={containerVariants}
+      >
+        {skills.map((skill) => (
           <motion.span
             key={skill}
             className="bg-sky-100 text-sky-800 font-medium px-4 py-2 rounded-full text-center shadow-sm"
+            variants={itemVariants}
             whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
           >
             {skill}
           </motion.span>
         ))}
-      </div>
+      </motion.div>
     </motion.section>
-  )
+  );
 }
-
-export default Skills

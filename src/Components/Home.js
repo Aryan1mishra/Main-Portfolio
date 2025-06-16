@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import { motion } from "framer-motion";
-import main from "../Components/img/main.jpg"
+import main from "../Components/img/main.jpg";
 import {
   FaGithub,
   FaLinkedin,
@@ -8,9 +8,10 @@ import {
   FaLaptopCode,
   FaFileAlt,
 } from "react-icons/fa";
+import { TypeAnimation } from "react-type-animation";
 
 function Home() {
-    const [showLinks, setShowLinks] = useState(false);
+  const [showLinks, setShowLinks] = useState(false);
 
   const socialLinks = [
     { icon: <FaGithub />, link: "https://github.com/Aryan1mishra", angle: 0 },
@@ -28,8 +29,11 @@ function Home() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="relative w-60 h-60 flex justify-center items-center mb-6 md:mb-0 group" onMouseEnter={() => setShowLinks(true)}
-        onMouseLeave={() => setShowLinks(false)}  >
+      <div
+        className="relative w-60 h-60 flex justify-center items-center mb-6 md:mb-0 group"
+        onMouseEnter={() => setShowLinks(true)}
+        onMouseLeave={() => setShowLinks(false)}
+      >
         <motion.img
           src={main}
           alt="Profile"
@@ -38,10 +42,11 @@ function Home() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         />
-         {/* Orbiting Links */}
+
+        {/* Orbiting Links */}
         {showLinks &&
           socialLinks.map(({ icon, link, angle }, index) => {
-            const radius = 120;
+            const radius = 100;
             const rad = (angle * Math.PI) / 180;
             const x = radius * Math.cos(rad);
             const y = radius * Math.sin(rad);
@@ -63,7 +68,20 @@ function Home() {
       </div>
 
       <div className="w-full md:w-1/2 text-center md:text-left md:pl-10">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 mb-4">Hi, I'm <p className='text-sky-500'>Aryan Mishra</p></h1>
+        <TypeAnimation
+          sequence={[
+            "Hi, I'm Aryan Mishra",
+            1000,
+            "I'm a MERN Stack Developer",
+            1000,
+            "I'm a Web Developer",
+            1000,
+          ]}
+          wrapper="h1"
+          speed={50}
+          className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 mb-4"
+          repeat={Infinity}
+        />
         <p className="text-base sm:text-lg leading-relaxed text-slate-700">
           I'm a passionate full-stack developer with experience in building web
           applications using the MERN stack. I love crafting beautiful
@@ -71,7 +89,7 @@ function Home() {
         </p>
       </div>
     </motion.section>
-  )
+  );
 }
 
-export default Home
+export default Home;

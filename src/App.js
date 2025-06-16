@@ -4,7 +4,6 @@ import Home from "./Components/Home";
 import Skills from "./Components/Skills";
 import Project from "./Components/Project";
 import Experiance from "./Components/Experiance";
-import Achivement from "./Components/Achivement";
 import { motion } from "framer-motion";
 
 
@@ -17,7 +16,6 @@ function App() {
         <Skills />
         <Experiance />
         <Project/>
-        <Achivement />
         
       </main>
       
