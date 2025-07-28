@@ -25,12 +25,20 @@ export default function Skills() {
     'MongoDB',
     'HTML/CSS',
     'Tailwind CSS',
-    'Git/GitHub',
     'Python',
     'Kotlin',
     'OOPs',
     'DBMS',
     'Computer Networks',
+    'DSA',
+    'My-SQL',
+    'NumPy',
+    'Pands',
+    'Scikit-learn',
+    'Matplotlib',
+    'Seaborn',
+    'MachineLearning',
+    'Postman',
   ];
 
   return (
