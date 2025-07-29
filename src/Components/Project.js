@@ -18,16 +18,34 @@ function Project() {
 
   const projects = [
     {
-      title: 'Solar System Simulation',
-      desc: 'OpenGL-based simulation project that visually represents the solar system and planetary motion.',
-      code: 'https://github.com/your-username/solar-system-simulation',
-      live: 'https://your-live-link.com/solar-system',
+      title: 'KeyWord Frequency Counter',
+      desc: 'Developed a Java DSA project that analyzes text to find the top N most frequent words, using Heaps and Priority Queues for efficient counting and ranking.',
+      code: 'hhttps://github.com/Aryan1mishra/keyword-Frequency-Count',
+      live: 'https://github.com/Aryan1mishra/keyword-Frequency-Count',
     },
     {
-      title: 'Portfolio Website',
-      desc: 'Personal portfolio built with React and Tailwind CSS showcasing my work and skills.',
-      code: 'https://github.com/your-username/portfolio-website',
-      live: 'https://your-live-link.com/portfolio',
+      title: 'Animal Welfare Society',
+      desc: 'Designed and developed a responsive website for a newly launched dog welfare society.',
+      code: 'https://github.com/Aryan1mishra/Animal-wellfare-society',
+      live: 'https://animalwellfaree.netlify.app/',
+    },
+    {
+      title: 'CMMMS Projct',
+      desc: 'Collaborated with a team of third-year students to develop a Computerized Maintenance Management System (CMMS)website.',
+      code: 'https://github.com/Aryan1mishra/CMMS-project-3Year',
+      live: 'https://cmmsthapar.netlify.app/',
+    },
+    {
+      title: 'File sharing website',
+      desc: 'Built a web application for secure file sharing, allowing users to easily upload, share, and download files through a clean interface.',
+      code: 'https://github.com/Aryan1mishra/File-share-application',
+      live: 'https://github.com/Aryan1mishra/File-share-application',
+    },
+    {
+      title: 'Gorilla Game',
+      desc: 'Built a web application for secure file sharing, allowing users to easily upload, share, and download files through a clean interface.',
+      code: 'https://github.com/Aryan1mishra/gorilla-game',
+      live: 'https://aryan1mishra.github.io/gorilla-game/',
     },
   ];
 

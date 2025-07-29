@@ -35,10 +35,37 @@ function Experience() {
           whileHover={{ scale: 1.02 }}
         >
           <h3 className="text-xl font-semibold text-sky-700 mb-2">
-            Web Developer – Suvidha Foundation
+            Tech Head – Enactus
           </h3>
           <p className="text-gray-600 text-sm sm:text-base">
-            Completed a 2-month internship improving the official website. Focused on creating <strong>responsive pages</strong> and enhancing <strong>user experience</strong> using modern web technologies.
+            Serving as Teach Head at Enactus, leading workshops and <strong>mentoring students</strong> to develop impactful, socially driven technical and entrepreneurial projects.
+          </p>
+        </motion.div>
+
+
+        {/* dog society */}
+        <motion.div
+          className="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition duration-300"
+          whileHover={{ scale: 1.02 }}
+        >
+          <h3 className="text-xl font-semibold text-sky-700 mb-2">
+            FullStack Website – Animal Welfare Society
+          </h3>
+          <p className="text-gray-600 text-sm sm:text-base">
+           Designed and developed a responsive website for a newly launched <strong>dog welfare society</strong>, helping showcase adoption campaigns, share resources, and engage the local community online.
+          </p>
+        </motion.div>
+
+        {/* suvidha foundation */}
+        <motion.div
+          className="bg-white p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition duration-300"
+          whileHover={{ scale: 1.02 }}
+        >
+          <h3 className="text-xl font-semibold text-sky-700 mb-2">
+            Internship – Suvidha Foundation NGO
+          </h3>
+          <p className="text-gray-600 text-sm sm:text-base">
+           Worked as a Web Developer <strong>Intern at Suvidha Foundation</strong>, designing and improving user friendly web pages to support the organization’s social initiatives.
           </p>
         </motion.div>
       </div>
