@@ -88,7 +88,6 @@ function Home() {
           frontends and efficient backends.
           {showText && (<p className="text-base sm:text-lg leading-relaxed text-slate-700 my-8">Click image for link</p>)}
         </p>
-        </p>
       </div>
     </motion.section>
   );
