@@ -19,7 +19,7 @@ function Home() {
     { icon: <FaLinkedin />, link: "https://linkedin.com/in/aryan-mishra-160867254/", angle: 72 },
     { icon: <FaWhatsapp />, link: "https://wa.me/916283849945", angle: 144 },
     { icon: <FaLaptopCode />, link: "https://leetcode.com/u/aryanmishra000/", angle: 216 },
-    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/1D0w9KLG448buLGpR3EHesxpvMawDw1Yj/view?usp=sharing", angle: 288 },
+    { icon: <FaFileAlt />, link: "https://drive.google.com/file/d/12X0PfKWf2JDxZwpGDBuT-U10nKJnkfGx/view?usp=drivesdk", angle: 288 },
   ];
 
   return (
