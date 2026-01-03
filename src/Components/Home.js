@@ -86,7 +86,7 @@ function Home() {
           I'm a passionate full-stack developer with experience in building web
           applications using the MERN stack. I love crafting beautiful
           frontends and efficient backends.
-          {showText && (<p className="text-base sm:text-lg leading-relaxed text-slate-700 my-8">Click image for link</p>)}
+          {showText && (<p className="text-base sm:text-lg leading-relaxed text-red-200 my-8">Click image for link</p>)}
         </p>
       </div>
     </motion.section>
