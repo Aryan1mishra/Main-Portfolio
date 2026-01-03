@@ -12,6 +12,7 @@ import { TypeAnimation } from "react-type-animation";
 
 function Home() {
   const [showLinks, setShowLinks] = useState(false);
+  const [showText, setShowText] = useState(true);
 
   const socialLinks = [
     { icon: <FaGithub />, link: "https://github.com/Aryan1mishra", angle: 0 },
@@ -37,6 +38,7 @@ function Home() {
         <motion.img
           src={main}
           alt="Profile"
+          onClick={() => setShowText(false)}
           className="rounded-full shadow-xl w-40 h-40 sm:w-52 sm:h-52 md:w-60 md:h-60 object-cover border-4 border-sky-200 z-10"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -86,6 +88,8 @@ function Home() {
           I'm a passionate full-stack developer with experience in building web
           applications using the MERN stack. I love crafting beautiful
           frontends and efficient backends.
+          {showText && (<p className="text-base sm:text-lg leading-relaxed text-slate-700 my-8">Click image for link</p>)}
+        </p>
         </p>
       </div>
     </motion.section>
