@@ -74,8 +74,6 @@ function Home() {
           sequence={[
             "Hi, I'm Aryan Mishra",
             1000,
-            "I'm a MERN Stack Developer",
-            1000,
             "I'm a Web Developer",
             1000,
           ]}
