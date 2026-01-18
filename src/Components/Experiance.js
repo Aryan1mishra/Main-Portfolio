@@ -62,10 +62,10 @@ function Experience() {
           whileHover={{ scale: 1.02 }}
         >
           <h3 className="text-xl font-semibold text-sky-700 mb-2">
-            Internship – Suvidha Foundation NGO
+            Internship – Apricus Intech
           </h3>
           <p className="text-gray-600 text-sm sm:text-base">
-           Worked as a Web Developer <strong>Intern at Suvidha Foundation</strong>, designing and improving user friendly web pages to support the organization’s social initiatives.
+           Worked as a Data Scientist <strong>at Apricus Intech</strong>, get hand on experience through project.
           </p>
         </motion.div>
       </div>
