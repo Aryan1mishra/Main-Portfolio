@@ -18,7 +18,7 @@ const itemVariants = {
 
 export default function Skills() {
   const skills = {
-    languages: ['Python', 'JavaScript', 'Java'],
+    languages: ['Python', 'JavaScript', 'Java'],  
     frontend: ['React.js', 'HTML', 'CSS', 'Tailwind CSS','Bootstrap'],
     backend: ['Node.js', 'Express.js', 'MongoDB', 'MySQL'],
     aiml: ['NumPy', 'Pandas', 'Scikit-learn', 'TensorFlow', 'PyTorch'],

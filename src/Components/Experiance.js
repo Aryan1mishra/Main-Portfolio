@@ -62,10 +62,10 @@ function Experience() {
           className="bg-white p-4 sm:p-5 md:p-6 rounded-xl shadow-md border border-slate-200 hover:shadow-lg transition duration-300"
           whileHover={{ scale: 1.02 }}
         >
-          <h3 className="text-lg sm:text-xl font-semibold text-sky-700 mb-2">
+          <h3 className="text-xl font-semibold text-sky-700 mb-2">
             Tech head at Urja
           </h3>
-          <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-gray-600 text-sm sm:text-base">
             Managed the Sports & Cultural Events Calendar for Urja , ensuring smooth scheduling and coordination across
             multiple events. Maintained accurate records of participants and streamlined event planning processes.
           </p>
